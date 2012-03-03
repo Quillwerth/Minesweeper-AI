@@ -2,6 +2,8 @@ package game;
 
 import java.util.Scanner;
 
+import ai.Bot;
+
 public class Referee {
 	/* Referee:
 	 * Manages the game. Takes in moves from the player, manages display of the game, parses moves.
@@ -66,4 +68,24 @@ public class Referee {
 		}
 		System.out.println("Game Over!");
 	}
+	
+	public void playBot(Bot player){
+		Scanner sc = new Scanner(System.in);
+		startGame();
+		while(!b.isWinner()){
+			displayBoard();
+			System.out.print("Move is: ");
+			String move = player.makeMove(this);
+			System.out.println(move);
+			if(turn(move)<0){
+				System.out.println("Lose.");
+				break;
+			}
+			if(b.isWinner()){
+				System.out.println("Win!");
+			}
+			sc.nextLine();
+		}
+	}
+	
 }

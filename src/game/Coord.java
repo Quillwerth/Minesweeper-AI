@@ -46,5 +46,9 @@ public class Coord {
 		}
 	}
 	
+	public String toString(){
+		return ""+x+","+y+","+tag;
+	}
+	
 	
 }

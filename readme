@@ -1,0 +1,10 @@
+Minesweeper AI:
+
+This was a fun little project. It works as long as its sure that a bomb is at a particular position.
+
+To make it better, one could implement some sort of system that takes in information about many squares at once,
+to figure out if a bomb MUST be there or not. It won't be easy. But it IS possible.
+
+Best of luck, I'm done with this for now. I hope to come back to it with more knowledge.
+
+PS
